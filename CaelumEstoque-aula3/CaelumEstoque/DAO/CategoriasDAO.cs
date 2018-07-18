@@ -8,7 +8,7 @@ namespace CaelumEstoque.DAO
 {
     public class CategoriasDAO
     {
-        public void Adiciona(CategoriaDoProduto categoria)
+        public void Adicionar(CategoriaDoProduto categoria)
         {
             using (var context = new EstoqueContext())
             {
