@@ -7,16 +7,26 @@ namespace CaelumEstoque.Controllers
 {
     public class ProdutoController : Controller
     {
-        //
-        // GET: /Produto/
-
         public ActionResult Index()
         {
-            ProdutosDAO dao = new ProdutosDAO();
-            IList<Produto> produtos = dao.Lista();
-            ViewBag.Produtos = produtos;
+            ViewBag.Produtos = new ProdutosDAO().Listar();
+
             return View();
         }
 
+        public ActionResult Form()
+        {
+            ViewBag.Categorias = new CategoriasDAO().Listar();
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Adicionar(Produto produto)
+        {
+            new ProdutosDAO().Adiciona(produto);
+
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -17,7 +17,7 @@ namespace CaelumEstoque.DAO
             }
         }
 
-        public IList<Produto> Lista()
+        public IList<Produto> Listar()
         {
             using (var contexto = new EstoqueContext())
             {

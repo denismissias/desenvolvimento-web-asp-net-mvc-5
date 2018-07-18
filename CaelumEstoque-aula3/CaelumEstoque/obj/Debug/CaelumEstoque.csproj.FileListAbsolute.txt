@@ -113,6 +113,5 @@ C:\Users\denis\Documents\Visual Studio 2013\Projects\desenvolvimento-web-asp-net
 C:\Users\denis\Documents\Visual Studio 2013\Projects\desenvolvimento-web-asp-net-mvc-5\CaelumEstoque-aula3\CaelumEstoque\bin\System.Web.Webpages.Deployment.xml
 C:\Users\denis\Documents\Visual Studio 2013\Projects\desenvolvimento-web-asp-net-mvc-5\CaelumEstoque-aula3\CaelumEstoque\bin\System.Web.Webpages.Razor.xml
 C:\Users\denis\Documents\Visual Studio 2013\Projects\desenvolvimento-web-asp-net-mvc-5\CaelumEstoque-aula3\CaelumEstoque\bin\System.Web.Helpers.xml
-C:\Users\denis\Documents\Visual Studio 2013\Projects\desenvolvimento-web-asp-net-mvc-5\CaelumEstoque-aula3\CaelumEstoque\obj\Debug\CaelumEstoque.csprojResolveAssemblyReference.cache
 C:\Users\denis\Documents\Visual Studio 2013\Projects\desenvolvimento-web-asp-net-mvc-5\CaelumEstoque-aula3\CaelumEstoque\obj\Debug\CaelumEstoque.dll
 C:\Users\denis\Documents\Visual Studio 2013\Projects\desenvolvimento-web-asp-net-mvc-5\CaelumEstoque-aula3\CaelumEstoque\obj\Debug\CaelumEstoque.pdb
