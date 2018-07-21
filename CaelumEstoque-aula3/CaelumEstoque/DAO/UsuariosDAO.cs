@@ -42,7 +42,7 @@ namespace CaelumEstoque.DAO
             }
         }
 
-        public Usuario Busca(string login, string senha)
+        public Usuario Buscar(string login, string senha)
         {
             using (var contexto = new EstoqueContext())
             {
