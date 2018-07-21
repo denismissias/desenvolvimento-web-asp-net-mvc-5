@@ -1,5 +1,4 @@
-﻿
-using CaelumEstoque.DAO;
+﻿using CaelumEstoque.DAO;
 using CaelumEstoque.Models;
 using System.Collections.Generic;
 using System.Web.Mvc;
@@ -7,7 +6,7 @@ namespace CaelumEstoque.Controllers
 {
     public class ProdutoController : Controller
     {
-        [Route("produtos", Name="ListarProdutos")]
+        [Route("produtos", Name = "ListarProdutos")]
         public ActionResult Index()
         {
             return View(new ProdutosDAO().Listar());
@@ -49,6 +48,19 @@ namespace CaelumEstoque.Controllers
             ViewBag.Produto = new ProdutosDAO().BuscarPorId(id);
 
             return View();
+        }
+
+        public ActionResult DecrementarQtd(int id)
+        {
+            ProdutosDAO dao = new ProdutosDAO();
+
+            Produto produto = dao.BuscarPorId(id);
+
+            produto.Quantidade--;
+
+            dao.Atualizar(produto);
+
+            return Json(produto);
         }
     }
 }

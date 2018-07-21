@@ -35,7 +35,7 @@ namespace CaelumEstoque.DAO
             }
         }
 
-        public void Atualiza(Produto produto)
+        public void Atualizar(Produto produto)
         {
             using (var contexto = new EstoqueContext())
             {
