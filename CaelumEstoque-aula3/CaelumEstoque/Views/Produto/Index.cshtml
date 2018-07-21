@@ -1,32 +1,21 @@
 ﻿@model IList<CaelumEstoque.Models.Produto>
-@{
-    Layout = null;
-}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Lista de produtos</title>
-</head>
-<body>
-    <table>
-        <thead>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome do Produto</th>
+            <th>Preco</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var produto in Model)
+        {
             <tr>
-                <th>Id</th>
-                <th>Nome do Produto</th>
-                <th>Preco</th>
+                <td>@produto.Id</td>
+                <td>@Html.RouteLink(produto.Nome, "VisualizarProduto", new { id = produto.Id }) </td>
+                <td>@produto.Preco</td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var produto in Model)
-            {
-                <tr>
-                    <td>@produto.Id</td>
-                    <td>@Html.RouteLink(produto.Nome, "VisualizarProduto", new { id = produto.Id }) </td>
-                    <td>@produto.Preco</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</body>
-</html>
+        }
+    </tbody>
+</table>

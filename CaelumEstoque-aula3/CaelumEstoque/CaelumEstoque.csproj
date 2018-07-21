@@ -103,6 +103,8 @@
     <Content Include="App_Data\CaelumEstoque.DAO.EstoqueContext_log.ldf">
       <DependentUpon>CaelumEstoque.DAO.EstoqueContext.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\site.css" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -143,6 +145,8 @@
     <Content Include="Views\Produto\Form.cshtml" />
     <Content Include="Views\Categoria\Adicionar.cshtml" />
     <Content Include="Views\Produto\Visualizar.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -150,9 +154,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
