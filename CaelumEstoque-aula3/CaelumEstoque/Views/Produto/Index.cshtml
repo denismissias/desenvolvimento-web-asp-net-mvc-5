@@ -1,8 +1,8 @@
-﻿@{
+﻿@model IList<CaelumEstoque.Models.Produto>
+@{
     Layout = null;
 }
 
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,11 +18,11 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var produto in ViewBag.Produtos)
+            @foreach (var produto in Model)
             {
                 <tr>
                     <td>@produto.Id</td>
-                    <td>@produto.Nome</td>
+                    <td>@Html.ActionLink(produto.Nome, "Visualizar", new { id = produto.Id }) </td>
                     <td>@produto.Preco</td>
                 </tr>
             }

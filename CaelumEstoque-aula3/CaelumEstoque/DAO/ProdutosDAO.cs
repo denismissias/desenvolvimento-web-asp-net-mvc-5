@@ -25,7 +25,7 @@ namespace CaelumEstoque.DAO
             }
         }
 
-        public Produto BuscaPorId(int id)
+        public Produto BuscarPorId(int id)
         {
             using (var contexto = new EstoqueContext())
             {
